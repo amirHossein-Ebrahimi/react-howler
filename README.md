@@ -11,7 +11,7 @@ Props can be passed to control playback and react to events such as end, load, p
 
 [![LICENSE MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/thangngoc89/react-howler)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![npm](https://img.shields.io/npm/v/react-howler.svg)](https://npmjs.org/package/react-howler)
+
 
 # howler.js
 
