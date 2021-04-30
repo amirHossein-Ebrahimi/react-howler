@@ -1,7 +1,7 @@
 {
   "name": "react-howler",
   "private": "false",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "lib/index.js",
   "license": "MIT",
   "files": [
