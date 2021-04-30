@@ -40,12 +40,14 @@ class ReactHowler extends Component {
         mute: props.mute,
         loop: props.loop,
         preload: props.preload,
+        rate: props.rate,
         volume: props.volume,
         onend: props.onEnd,
         onplay: props.onPlay,
         onpause: props.onPause,
         onvolume: props.onVolume,
         onstop: props.onStop,
+        onrate: props.onRate,
         onload: props.onLoad,
         onloaderror: props.onLoadError,
         html5: props.html5
@@ -195,6 +197,15 @@ class ReactHowler extends Component {
   }
 
   /**
+   * Get/set the rate of playback for a sound. This method optionally takes 0, 1 or 2 arguments.
+   * @param {Number} [rate] - The rate of playback. 0.5 to 4.0, with 1.0 being normal speed.
+   * @param {Number} [id] - The sound ID. If none is passed, playback rate of all sounds in group will change.
+   */
+  rate (rate, id) {
+    this.howler.rate(rate, id)
+  }
+
+  /**
    * Get the duration of the audio source
    * @return {Number} [Audio length in seconds. Will return 0 until after the load event fires]
    */
@@ -228,12 +239,14 @@ ReactHowler.propTypes = {
   mute: PropTypes.bool,
   loop: PropTypes.bool,
   preload: PropTypes.bool,
+  rate: PropTypes.number,
   volume: PropTypes.number,
   onEnd: PropTypes.func,
   onPause: PropTypes.func,
   onPlay: PropTypes.func,
   onVolume: PropTypes.func,
   onStop: PropTypes.func,
+  onRate: PropTypes.func,
   onLoad: PropTypes.func,
   onLoadError: PropTypes.func,
   html5: PropTypes.bool
@@ -246,12 +259,14 @@ ReactHowler.defaultProps = {
   mute: false,
   preload: true,
   loop: false,
+  rate: 1.0,
   volume: 1.0,
   onEnd: noop,
   onPause: noop,
   onPlay: noop,
   onVolume: noop,
   onStop: noop,
+  onRate: noop,
   onLoad: noop,
   onLoadError: noop,
   html5: false
