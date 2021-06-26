@@ -18,14 +18,13 @@ Props can be passed to control playback and react to events such as end, load, p
 [howler.js](https://github.com/goldfire/howler.js/) is an audio library for the modern web. It defaults to Web Audio API and falls back to HTML5 Audio.
 
 
+😇 **Better** alternative for this package can be [raptor-howler](https://www.npmjs.com/package/raptor-howler)
+
 # Usage
 
 * npm: `npm install --save amirHossein-Ebrahimi/react-howler#v5.0.1`
 * yarn: `yarn add amirHossein-Ebrahimi/react-howler#v5.0.1`
 
-## Better alternative package
-
-[raptor-howler](https://www.npmjs.com/package/raptor-howler)
 
 ```javascript
 import React, { Component } from 'react'
